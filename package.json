@@ -10,7 +10,6 @@
     "install": "concurrently \"cd client && npm install\" \"cd server && npm install\" ",
     "client": "cd client && npm start",
     "heroku-prebuild": "npm install --dev"
-
   },
   "keywords": [],
   "author": "",
@@ -21,10 +20,20 @@
   },
   "devDependencies": {
     "concurrently": "^5.3.0",
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.4",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0"
   },
   "description": "",
   "engines": {
     "node": "16.x"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Morganegilbert/text-editor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Morganegilbert/text-editor/issues"
+  },
+  "homepage": "https://github.com/Morganegilbert/text-editor#readme"
 }
