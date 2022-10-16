@@ -25,7 +25,7 @@ module.exports = () => {
         template: './index.html',
         title: 'TODOs List'
       }),
-     
+      new WorkboxPlugin.GenerateSW()
     ],
     module: {
       rules: [
