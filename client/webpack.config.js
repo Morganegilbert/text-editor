@@ -25,7 +25,10 @@ module.exports = () => {
         template: './index.html',
         title: 'TODOs List'
       }),
-      new WorkboxPlugin.GenerateSW()
+      new InjectManifest({
+        swSrc: './src/sw.js',
+        swDest: 'service-worker.js',
+      }),
     ],
     module: {
       rules: [
